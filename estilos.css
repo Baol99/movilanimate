@@ -1,0 +1,257 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Menu*/
+.menu {
+    display: none;
+}
+
+@media (max-width:720px) {
+    body {
+        width: 700px;
+    }
+}
+
+@media (max-width:480px) {
+    body {
+        width: 480px;
+    }
+
+    header {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    header .barra i {
+        color: #ff4048;
+        font-size: 2em;
+    }
+
+    /*MENU*/
+    .menu {
+        background-color: #ff4048;
+        padding: 20px 30px;
+        position: relative;
+        width: 100%;
+        left: -100%;
+        transition: all 2s;
+    }
+
+    .menu ul {
+        list-style-type: none;
+    }
+
+    .menu ul li a {
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        width: 100%;
+        padding: 10px;
+        border-bottom: dotted;
+        font-size: 1.2em;
+    }
+
+    .menu.abrirmenu {
+        left: 0px;
+        transition: left 2s;
+    }
+
+    /*FOTOS*/
+    .rslides {
+        position: relative;
+        list-style: none;
+        overflow: hidden;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .rslides li {
+        -webkit-backface-visibility: hidden;
+        position: absolute;
+        display: none;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+    .rslides li:first-child {
+        position: relative;
+        display: block;
+        float: left;
+    }
+
+    .rslides img {
+        display: block;
+        height: auto;
+        float: left;
+        width: 100%;
+        border: 0;
+    }
+
+    /*SERVICIOS*/
+    .servicios {
+        max-width: 450px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .sec h1 {
+        font-size: 2em;
+        color: #ff4048;
+    }
+
+    .sec hr {
+        height: 8px;
+        background-color: black;
+        width: 15%;
+        margin: auto;
+    }
+
+    .servicios hr {
+        width: 25%;
+    }
+
+    .servicios .serv {
+        width: 350px;
+        height: 300px;
+        margin: 20px auto;
+        box-shadow: 0px 0px 10px #afafaf;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 50px;
+    }
+
+    .servicios .serv p {
+        color: rgb(78, 78, 78);
+    }
+
+    .servicios .serv .cuadro {
+        width: 80px;
+        height: 80px;
+        border: 1px #afafaf solid;
+        position: relative;
+        border-radius: 5px;
+        margin: 0 0 30px 0;
+    }
+
+    .servicios .serv .cuadro i {
+        position: absolute;
+        font-size: 3em;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ff4048;
+
+    }
+
+    /*SECCION INSTRUCTORES*/
+    .instructores h1 {
+        text-align: center;
+    }
+
+    .instructores .insfotos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .instructores .insfotos a img {
+        width: 240px;
+    }
+
+    /*SECCION ANUNCIO*/
+    .anuncio {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        align-items: end;
+        justify-content: space-between;
+        width: 100%;
+        margin: 20px 0;
+        height: 500px;
+        background-image: url("imagenes/foto_parallaxs.jpg");
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .anuncio h1 {
+        font-size: 3em;
+        text-align: end;
+        color: #fff;
+    }
+
+    .anuncio h1 span {
+        color: #ff4048;
+    }
+
+    .anuncio a {
+        display: inline-block;
+        padding: 20px 30px;
+        font-size: 1.2em;
+        color: #fff;
+        text-decoration: none;
+        background-color: #ff4048;
+    }
+
+    .anuncio a:hover {
+        background-color: #aa0b13;
+    }
+
+    /*FOOTER*/
+    footer {
+        width: 470px;
+        height: 80px;
+        margin: 5px auto;
+        border: 1px solid #ff4048;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    footer .circ {
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        border: 1px solid #afafaf;
+        position: relative;
+    }
+
+    footer .circ i {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ff4048;
+    }
+
+    /*ENLACES FOOTER*/
+
+    footer .face:hover {
+        background-color: blue;
+    }
+
+    footer .inst:hover {
+        background-color: brown;
+    }
+
+    footer .circ:hover i {
+        color: white;
+    }
+
+    footer .you:hover {
+        background-color: red;
+    }
+
+}
