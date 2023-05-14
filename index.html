@@ -41,11 +41,17 @@
     <br />
 
     <section class="contenedorfotos">
-      <ul class="rslides">
+      <ul class="rslides" id="slider">
         <li><img src="imagenes/slide1.jpg" alt="" /></li>
         <li><img src="imagenes/slide2.jpg" alt="" /></li>
         <li><img src="imagenes/slide3.jpg" alt="" /></li>
       </ul>
+      <div class="info">
+        <p>
+          El mejor FITNESS <br />
+          en MERIDA
+        </p>
+      </div>
     </section>
 
     <section class="servicios sec">
@@ -169,6 +175,15 @@
       /*SLIDE*/
       $(function () {
         $(".rslides").responsiveSlides();
+      });
+      // Slideshow 3
+      $("#slider").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500,
+        maxwidth: 800,
+        namespace: "large-btns",
       });
 
       /*IMPLEMENTACION DEL WOW*/
